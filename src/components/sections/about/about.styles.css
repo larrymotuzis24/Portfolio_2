@@ -1,0 +1,11 @@
+.about-container {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-pic {
+   max-width: 200px;
+   max-height: 200px;
+   padding-top: 10px;
+}

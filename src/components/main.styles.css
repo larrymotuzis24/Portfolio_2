@@ -1,0 +1,6 @@
+.content {
+    position: relative;
+    z-index: 1; /* Bring your content to the foreground */
+    padding: 20px;
+    color: #fff;
+  }
