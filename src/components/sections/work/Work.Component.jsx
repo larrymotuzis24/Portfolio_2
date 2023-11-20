@@ -1,10 +1,15 @@
+// WorkComponent.jsx
+import React from 'react';
+import { Link } from 'react-scroll';
+import {WorkContainer, WorkDescription, WorkItem, WorkLink, WorkTitle} from './work.styles.js';
+
 const WorkComponent = () => {
   const recentWork = [
     {
       title: "Cooper Valuation Group",
       to: "https://www.coopervaluationgroup.com/",
       techStack: "React, JavaScript, TailWind CSS",
-    //   video: CVGDemo,
+      //   video: CVGDemo,
       description:
         "I collaborated with an appraisal group to develop a dynamic and user-friendly website that caters to their specific needs. The website serves as a comprehensive platform for the group, offering valuable features and functionalities to enhance their operations.",
     },
@@ -18,19 +23,20 @@ const WorkComponent = () => {
   ];
 
   return (
-    <div>
-      <h2> Some of my Work </h2>
-      <div>
-        {recentWork.map((work) => {
-          return (
-            <div key={work.title}>
-              <h6> {work.name} </h6>
-              <p> {work.description} </p>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    <WorkContainer id="work">
+      {recentWork.map((work, index) => (
+        <WorkItem key={index}>
+          <WorkTitle>{work.title}</WorkTitle>
+          <WorkDescription>{work.description}</WorkDescription>
+          <WorkLink href={work.link} target="_blank" rel="noopener noreferrer">
+            Visit Project
+          </WorkLink>
+        </WorkItem>
+      ))}
+      <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
+        Go to About
+      </Link>
+    </WorkContainer>
   );
 };
 

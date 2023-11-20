@@ -1,5 +1,8 @@
-import "./about.styles.css";
+// AboutSection.jsx
+import React from 'react';
+import { Link } from 'react-scroll';
 import profilePic from "./IMG_0210.JPG";
+import { AboutContainer, AboutContent, ProfileImage, TechnologiesList, TechnologiesTitle, AboutText } from './about.styles';
 
 const AboutSection = () => {
   const aboutMe = `
@@ -11,29 +14,25 @@ const AboutSection = () => {
   `;
 
   return (
-    <div className="about-container">
-      <h1> Larry Motuzis </h1>
-      <div>
-        <h1> About Me </h1>
-        <div>{aboutMe}</div>
-        <div>
-          <img src={profilePic} alt="profile" className="profile-pic"/>
-        </div>
-        <div>
-          <p> Technologies ive been working with </p>
-          <ul className="">
-            <li> JavaScript </li>
-            <li> React </li>
-            <li> Redux-Toolkit</li>
-            <li> Node.js </li>
-            <li> TypeScript </li>
-            <li> PHP </li>
-            <li> MongoDB </li>
-            <li> Firebase </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <AboutContainer>
+    <AboutContent>
+        <h1>Larry Motuzis</h1>
+        <h2>About Me</h2>
+        <AboutText>{aboutMe}</AboutText>
+        <ProfileImage src={profilePic} alt="profile" />
+        <TechnologiesTitle>Technologies I've been working with</TechnologiesTitle>
+        <TechnologiesList>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Redux-Toolkit</li>
+          <li>Node.js</li>
+          <li>TypeScript</li>
+          <li>PHP</li>
+          <li>MongoDB</li>
+          <li>Firebase</li>
+        </TechnologiesList>
+      </AboutContent>
+    </AboutContainer>
   );
 };
 
