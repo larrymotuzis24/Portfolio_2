@@ -15,7 +15,7 @@ const Main = () => {
     <NavBar />
 
     <ContentContainer>
-      <SectionContainer>
+      {/* <SectionContainer>
         <SectionLink to="about" spy={true} smooth={true} offset={-70} duration={500}>
           About
         </SectionLink>
@@ -26,7 +26,7 @@ const Main = () => {
           Work
         </SectionLink>
 
-      </SectionContainer>
+      </SectionContainer> */}
 
       <Element name="about">
         <AboutSection />
