@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-
 export const AboutContainer = styled.div`
-  background-color: #f8f8f8;
+  background-color: rgba(255, 255, 255, 0.6); /* Adjust the last value for opacity */
   padding: 50px 0;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
 `;
 
 export const AboutContent = styled.div`
@@ -16,13 +17,15 @@ export const AboutContent = styled.div`
 export const AboutText = styled.p`
   font-size: 16px;
   line-height: 1.6;
-  color: #555;
+  color: #333;
+
+
 `;
 
 export const ProfileImage = styled.img`
-  max-width: 100%;
+  max-width: 50%;
   border-radius: 50%;
-  margin: 20px 0;
+  margin: 20px auto;
 `;
 
 export const TechnologiesList = styled.ul`

@@ -9,7 +9,7 @@ export const MainContainer = styled.div`
 export const ContentContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
 `;
 
 export const SectionLink = styled(Link)`
@@ -18,5 +18,5 @@ export const SectionLink = styled(Link)`
 `;
 
 export const SectionContainer = styled.div`
-margin-bottom: 50px; /* Adjust the margin to control the space between sections */
+margin-bottom: 50px; 
 `;

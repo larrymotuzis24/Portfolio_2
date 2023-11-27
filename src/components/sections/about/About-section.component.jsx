@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import profilePic from "./IMG_0210.JPG";
 import { AboutContainer, AboutContent, ProfileImage, TechnologiesList, TechnologiesTitle, AboutText } from './about.styles';
+import Header from '../../header/Header-componet';
 
 const AboutSection = () => {
   const aboutMe = `
@@ -15,9 +16,8 @@ const AboutSection = () => {
 
   return (
     <AboutContainer>
+      <Header />
     <AboutContent>
-        <h1>Larry Motuzis</h1>
-        <h2>About Me</h2>
         <AboutText>{aboutMe}</AboutText>
         <ProfileImage src={profilePic} alt="profile" />
         <TechnologiesTitle>Technologies I've been working with</TechnologiesTitle>

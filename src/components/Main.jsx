@@ -8,6 +8,8 @@ import ParticleBackground from './particle-background/ParticleBackground';
 import WorkComponent from './sections/work/Work.Component';
 import { MainContainer, ContentContainer, SectionLink, SectionContainer } from './main.styles.js';
 
+
+
 const Main = () => {
   return (
     <MainContainer>
