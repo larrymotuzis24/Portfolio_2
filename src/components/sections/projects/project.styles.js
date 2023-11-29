@@ -1,20 +1,27 @@
-
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // Styled Components
 export const ProjectsContainer = styled.div`
-  background-color: #f3f3f3;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 50px 0;
+  border-radius: 10px;
+  text-align: center;
 `;
 
 export const ProjectItem = styled.div`
+  box-sizing: border-box;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-top: 30px;
-`;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 40px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.2s ease-in-out;
 
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+`;
 export const ProjectTitle = styled.h2`
   font-size: 24px;
   margin-bottom: 10px;
@@ -33,8 +40,16 @@ export const ProjectLink = styled.a`
   font-weight: bold;
   display: inline-block;
   margin-top: 10px;
+  padding: 5px 10px;
 
   &:hover {
     text-decoration: underline;
+    background-color: #e0e0e0;
   }
+`;
+
+export const Title = styled.h1`
+  font-family: 'Nabla', sans-serif;
+  color: #333;
+  font-size: 3em;
 `;

@@ -1,13 +1,13 @@
 // Projects.jsx
 import React from 'react';
 import { Link } from 'react-scroll';
-import {ProjectsContainer, ProjectDescription, ProjectItem, ProjectTitle, ProjectLink} from './project.styles.js';
+import {ProjectsContainer, ProjectDescription, ProjectItem, ProjectTitle, ProjectLink, Title} from './project.styles.js';
 
 const Projects = () => {
   const prevProjects = [
     {
       title: "Test Brew",
-      to: "https://testbrew.herokuapp.com/",
+      link: "https://testbrew.herokuapp.com/",
       techStack:
         "React, JavaScript, Express, Webpack, Node.js, SQL, TailWind CSS, JSON Web Token",
       description:
@@ -15,7 +15,7 @@ const Projects = () => {
     },
     {
       title: "TIC-TAC-TOE",
-      to: "https://larrymotuzis24.github.io/tic-tac-toe/",
+      link: "https://larrymotuzis24.github.io/tic-tac-toe/",
       techStack: "React, JavaScript, TailWind CSS",
       description:
         "Created a classic Tic-Tac-Toe game using Tic-Tac-Toe app using React.js. The app allows users to play the classic game against an AI opponent. It features an intuitive user interface, responsive design, and smooth gameplay experience. The app incorporates a range of technologies and concepts, including React hooks, Redux for state management, and the Minimax algorithm for the AI opponent. The Minimax algorithm ensures that the AI opponent makes optimal moves, providing a challenging experience for players.",
@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <ProjectsContainer id="projects">
-      <h2> My Projects </h2>
+      <Title> My Projects </Title>
     {prevProjects.map((project, index) => (
       <ProjectItem key={index}>
         <ProjectTitle>{project.title}</ProjectTitle>
@@ -34,9 +34,6 @@ const Projects = () => {
         </ProjectLink>
       </ProjectItem>
     ))}
-    <Link to="work" spy={true} smooth={true} offset={-70} duration={500}>
-      Go to Work
-    </Link>
   </ProjectsContainer>
   );
 };
