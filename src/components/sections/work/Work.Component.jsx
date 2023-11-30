@@ -1,7 +1,6 @@
 // WorkComponent.jsx
 import React from 'react';
-import { Link } from 'react-scroll';
-import {WorkContainer, WorkDescription, WorkItem, WorkLink, WorkTitle} from './work.styles.js';
+import {WorkContainer, WorkDescription, WorkItem, WorkLink, WorkTitle, Title, StyledButtonLink } from './work.styles.js';
 
 const WorkComponent = () => {
   const recentWork = [
@@ -24,7 +23,7 @@ const WorkComponent = () => {
 
   return (
     <WorkContainer id="work">
-      <h1> Recent Jobs </h1>
+      <Title> Recent Work </Title>
       {recentWork.map((work, index) => (
         <WorkItem key={index}>
           <WorkTitle>{work.title}</WorkTitle>
@@ -34,9 +33,9 @@ const WorkComponent = () => {
           </WorkLink>
         </WorkItem>
       ))}
-      <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
-        Go to About
-      </Link>
+      <StyledButtonLink to="about" spy={true} smooth={true} offset={-70} duration={500}>
+        Back to the top 
+      </StyledButtonLink>
     </WorkContainer>
   );
 };
