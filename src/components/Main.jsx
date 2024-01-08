@@ -16,13 +16,14 @@ const Main = () => {
           <AboutSection />
         </Element>
 
+        <Element name="work">
+          <WorkComponent />
+        </Element>
+        
         <Element name="projects">
           <Projects />
         </Element>
 
-        <Element name="work">
-          <WorkComponent />
-        </Element>
       </ContentContainer>
     </MainContainer>
   );

@@ -1,5 +1,4 @@
 import {NavBarContainer,NavBarLink} from './navbar.styles.js';
-import { Link } from 'react-scroll';
 
 const NavBar = () => {
     return (

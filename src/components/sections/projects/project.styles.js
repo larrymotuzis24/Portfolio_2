@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as ScrollLink } from 'react-scroll'
 
 // Styled Components
 export const ProjectsContainer = styled.div`
@@ -52,4 +53,18 @@ export const Title = styled.h1`
   font-family: 'Nabla', sans-serif;
   color: #333;
   font-size: 3em;
+`;
+export const StyledButtonLink = styled(ScrollLink)`
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2980b9; 
+    cursor: pointer; 
+  }
 `;

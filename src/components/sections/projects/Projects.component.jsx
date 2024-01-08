@@ -1,7 +1,6 @@
 // Projects.jsx
 import React from 'react';
-import { Link } from 'react-scroll';
-import {ProjectsContainer, ProjectDescription, ProjectItem, ProjectTitle, ProjectLink, Title} from './project.styles.js';
+import {ProjectsContainer, ProjectDescription, ProjectItem, ProjectTitle, ProjectLink, Title, StyledButtonLink} from './project.styles.js';
 
 const Projects = () => {
   const prevProjects = [
@@ -34,6 +33,9 @@ const Projects = () => {
         </ProjectLink>
       </ProjectItem>
     ))}
+      <StyledButtonLink to="about" spy={true} smooth={true} offset={-70} duration={500}>
+        Back to the top 
+      </StyledButtonLink>
   </ProjectsContainer>
   );
 };

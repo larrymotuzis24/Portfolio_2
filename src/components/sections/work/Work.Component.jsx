@@ -1,6 +1,6 @@
 // WorkComponent.jsx
 import React from 'react';
-import {WorkContainer, WorkDescription, WorkItem, WorkLink, WorkTitle, Title, StyledButtonLink } from './work.styles.js';
+import {WorkContainer, WorkDescription, WorkItem, WorkLink, WorkTitle, Title } from './work.styles.js';
 
 const WorkComponent = () => {
   const recentWork = [
@@ -19,6 +19,12 @@ const WorkComponent = () => {
       description:
         "Led a comprehensive engagement with ABN's ownership team to strategize and outline their vision for the upcoming remodel and relaunch of their website. Collaborated closely with the owner to understand their specific requirements and objectives. Leveraging in-depth discussions and insightful feedback, orchestrated the creation of a dynamic and modern website that seamlessly aligns with ABN's brand identity. The result of this collaborative effort is a freshly relaunched website that showcases ABN's offerings in an engaging and user-friendly manner, while also reflecting the company's values and aspirations.",
     },
+    {
+      title: "Cooper Valuation Group Database Migration",
+      techStack: "React, Node, Express, Axios, PostgreSQL, Tailwind CSS, Styled Components",
+      description:
+        "Led the migration from an Excel-based database to a PostgreSQL framework. Created the ability for users to filter, add, edit, and delete job records seamlessly. A key feature of the application is the dual-access system: administrators are granted full editing rights, while staff users have access limited to data retrieval, ensuring robust data governance. The front interface is designed for efficiency, with the added capability for users to export data directly into Excel.",
+    },
   ];
 
   return (
@@ -33,9 +39,7 @@ const WorkComponent = () => {
           </WorkLink>
         </WorkItem>
       ))}
-      <StyledButtonLink to="about" spy={true} smooth={true} offset={-70} duration={500}>
-        Back to the top 
-      </StyledButtonLink>
+ 
     </WorkContainer>
   );
 };
