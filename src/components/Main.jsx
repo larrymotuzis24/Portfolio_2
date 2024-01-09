@@ -8,6 +8,7 @@ import WorkComponent from "./sections/work/Work.Component";
 import { MainContainer, ContentContainer } from "./main.styles.js";
 
 const Main = () => {
+  console.log('main')
   return (
     <MainContainer>
       <ParticleBackground />
@@ -19,7 +20,7 @@ const Main = () => {
         <Element name="work">
           <WorkComponent />
         </Element>
-        
+
         <Element name="projects">
           <Projects />
         </Element>
