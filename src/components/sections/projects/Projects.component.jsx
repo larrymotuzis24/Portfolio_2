@@ -1,6 +1,6 @@
 // Projects.jsx
 import React from 'react';
-import {ProjectsContainer, ProjectDescription, ProjectItem, ProjectTitle, ProjectLink, Title, StyledButtonLink} from './project.styles.js';
+import {ProjectsContainer, ProjectDescription, ProjectItem, ProjectTitle, ProjectLink, Title, StyledButtonLink, TechStackLabel } from './project.styles.js';
 
 const Projects = () => {
   const prevProjects = [
@@ -23,10 +23,12 @@ const Projects = () => {
 
   return (
     <ProjectsContainer id="projects">
-      <Title> My Projects </Title>
+      <Title> Past Projects </Title>
     {prevProjects.map((project, index) => (
       <ProjectItem key={index}>
         <ProjectTitle>{project.title}</ProjectTitle>
+        <TechStackLabel> Tech Stack: </TechStackLabel>
+        <ProjectDescription> {project.techStack}</ProjectDescription>
         <ProjectDescription>{project.description}</ProjectDescription>
         <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
           Visit Project

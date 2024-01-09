@@ -35,6 +35,11 @@ export const ProjectDescription = styled.p`
   margin-bottom: 15px;
 `;
 
+export const TechStackLabel = styled.p`
+  font-size: 20px;
+  text-decoration:underline;
+`
+
 export const ProjectLink = styled.a`
   color: #007bff;
   text-decoration: none;

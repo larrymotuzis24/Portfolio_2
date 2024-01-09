@@ -6,7 +6,7 @@ export const WorkContainer = styled.div`
   padding: 50px 0;
   border-radius: 10px;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 15px;
 `;
 
 export const WorkItem = styled.div`
@@ -36,6 +36,11 @@ export const WorkDescription = styled.p`
   color: #555;
   margin-bottom: 15px;
 `;
+
+export const TechStackLabel = styled.p`
+  font-size: 20px;
+  text-decoration:underline;
+`
 
 export const WorkLink = styled.a`
   color: #007bff;
